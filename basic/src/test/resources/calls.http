@@ -1,1 +1,11 @@
+### trigger environment update for ConfigurationProperties
+POST http://localhost:8080/actuator/env
+Content-Type: application/json
+
+{
+  "name": "mutable-config.key",
+  "value": "mutableConfigFromPostToEnvEndpoint"
+}
+
+### trigger configuration refresh
 POST http://localhost:8080/actuator/refresh
