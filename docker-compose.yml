@@ -1,0 +1,8 @@
+name: reloaddemo
+
+services:
+  consul:
+    container_name: consul-kv
+    ports:
+      - '8500:8500'
+    image: 'hashicorp/consul'
