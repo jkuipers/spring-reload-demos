@@ -18,7 +18,7 @@ public class ConfigController {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
-    @Value("${basic-key}")
+    @Value("${basic-key:fromCode}")
     private String basicKey;
 
     private MutableConfigProperties mutableConfig;
