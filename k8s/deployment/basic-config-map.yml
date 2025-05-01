@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: basic
+  labels:
+    spring.cloud.kubernetes.config: "true"
+data:
+  application.properties: |-
+    basic-key=basicFromConfigMap
+    mutable-config.key=mutableConfigFromConfigMap
+    immutable-config.key=immutableConfigFromConfigMap
